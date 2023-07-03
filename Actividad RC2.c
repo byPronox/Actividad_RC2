@@ -1,206 +1,332 @@
-// Seleccion de las 3 librerias necesatrias para el codigo
-
 #include <stdio.h>
 
 #include <stdlib.h>
 
 #include <time.h>
 
-// Creacion del arreglo con cadenas de caracteres con las 7 carreras
+
+
+
 char *materias[] = {
 
-    "Ingenieria de Software",
+  "Ingenieria de Software",
 
-    "Administracion",
+  "Administracion",
 
-    "Economia",
+  "Economia",
 
-    "Relaciones Internacionales",
+  "Relaciones Internacionales",
 
-    "Matematicas",
+  "Matematicas",
 
-    "Contabilidad",
+  "Contabilidad",
 
-    "Ingenieria Industrial"};
+  "Ingenieria Industrial"};
 
-void CAMI(int Datos[][2][7], FILE *archivoResultados) // Creacion del File .txt con arreglo tridimencional
-{
 
-    int Ami = 0; // Año de máximo ingreso
 
-    int Mi = 0; // Número máximo de ingreso
 
-    for (int a = 0; a < 5; a++)
-    {
+void CAMI (int Datos[][2][7], FILE *archivoResultados) {
 
-        int ti = 0; // Total de ingresos se inicializa en 0
+  int Ami = 0; // Año de máximo ingreso
 
-        for (int s = 0; s < 2; s++)
-        {
+  int Mi = 0;  // Número máximo de ingreso
 
-            for (int c = 0; c < 7; c++)
-            {
 
-                ti += Datos[a][s][c];
-            }
-        }
 
-        if (ti > Mi)
-        {
 
-            Mi = ti;
+  for (int a = 0; a < 5; a++) {
 
-            Ami = 2023 - 5 + a;
-        }
+    int ti = 0; // Total de ingresos se inicializa en 0
+
+
+
+
+    for (int s = 0; s < 2; s++) {
+
+      for (int c = 0; c < 7; c++) {
+
+        ti += Datos[a][s][c];
+
+      }
+
     }
 
-    fprintf(archivoResultados, "El año con la mayor cantidad de alumnos ingresaron a la universidad fue: %d\n", Ami);
+
+
+
+    if (ti > Mi) {
+
+      Mi = ti;
+
+      Ami = 2023 - 5 + a;
+
+    }
+
+  }
+
+
+
+
+  fprintf(archivoResultados, "El año con la mayor cantidad de alumnos ingresaron a la universidad fue: %d\n", Ami);
+
 }
 
-// Creacion de menu con 4 opciones
 
-void mostrarMenu()
-{
 
-    printf("Menu:\n");
 
-    printf("1. Calcular el año con la mayor cantidad de alumnos ingresados a la universidad.\n");
+void CCMI(int Datos[][2][7], FILE *archivoResultados) {
 
-    printf("2. Calcular la carrera que recibió la mayor cantidad de alumnos en el último año.\n");
+  int Mis = 0; // El mayor número de ingresos registrado
 
-    printf("3. Calcular el año en que la carrera de Ingeniería de Software recibió la mayor cantidad de alumnos.\n");
+  int cma = 0; // La carrera a la que entraron la mayor cantidad de alumnos
 
-    printf("4. Salir.\n");
+
+
+
+  for (int c = 0; c < 7; c++) {
+
+    int tdi = Datos[4][1][c]; // Total de ingresos en el último año (5 - 1 = 4 y 2 - 1 = 1)
+
+
+
+
+    if (tdi > Mis) {
+
+      Mis = tdi;
+
+      cma = c;
+
+    }
+
+  }
+
+
+
+
+  fprintf(archivoResultados, "La carrera que recibió la mayor cantidad de alumnos inscritos este último año fue la de %s\n", materias[cma]);
+
 }
 
-int main()
-{
-    srand(time(NULL));
-    // iniciamos las variables, arreglo tridimencional
-    int Datos[5][2][7];
 
-    int a, s, c;
 
-    // 3 For para ingresar datos random de 1 a 200
 
-    for (a = 0; a < 5; a++)
-    {
+void CAMIS(int Datos[][2][7], FILE *archivoResultados) {
 
-        for (s = 0; s < 2; s++)
-        {
+  int Is = 0; // Ingeniería de Software
 
-            for (c = 0; c < 7; c++)
-            {
+  int Im = 0; // Ingresos mayores
 
-                Datos[a][s][c] = rand() % 201;
-            }
-        }
-    }
-    // Se abre el archivo llamado datos .txt
-    FILE *archivoDatos;
+  int Am = 0; // Años con mayor cantidad de alumnos que ingresaron
 
-    archivoDatos = fopen("datos.txt", "w");
 
-    if (archivoDatos == NULL)
-    {
 
-        printf("No se pudo abrir el archivo datos.txt.\n");
 
-        return 1;
+  for (int a = 0; a < 5; a++) {
+
+    int idl = Datos[a][1][Is]; // Ingresos de la carrera
+
+
+
+
+    if (idl > Im) {
+
+      Im = idl;
+
+      Am = 2023 - 5 + a;
+
     }
 
-    // Se imprime los datos del semestre, año, alumnos dentro del .txt
+  }
 
-    for (a = 0; a < 5; a++)
-    {
 
-        fprintf(archivoDatos, "Año %d:\n", 2023 - 5 + a);
 
-        for (s = 0; s < 2; s++)
-        {
 
-            fprintf(archivoDatos, "Semestre %d:\n", s + 1);
+  fprintf(archivoResultados, "La carrera de Ingeniería de Software recibió la mayor cantidad de alumnos en el año: %d\n", Am);
 
-            for (c = 0; c < 7; c++)
-            {
+}
 
-                fprintf(archivoDatos, "Carrera %d - %s: %d alumnos\n", c + 1, materias[c], Datos[a][s][c]);
-            }
-        }
-    }
-    // Se cierra el .txt
 
-    fclose(archivoDatos);
 
-    // Se crea las variables para las opciones que introdusca el usuario
 
-    int opcion;
+void mostrarMenu() {
 
-    int salir = 0;
+  printf("Menu:\n");
 
-    // Se abre otro .txt con los resultados
+  printf("1. Calcular el año con la mayor cantidad de alumnos ingresados a la universidad.\n");
 
-    FILE *archivoResultados;
+  printf("2. Calcular la carrera que recibió la mayor cantidad de alumnos en el último año.\n");
 
-    archivoResultados = fopen("resultados.txt", "w");
+  printf("3. Calcular el año en que la carrera de Ingeniería de Software recibió la mayor cantidad de alumnos.\n");
 
-    if (archivoResultados == NULL)
-    {
+  printf("4. Salir.\n");
 
-        printf("No se pudo abrir el archivo resultados.txt.\n");
+}
 
-        return 1;
-    }
 
-    // Un swich para que detecte la opcion ingrasada por el usuario
 
-    while (!salir)
-    {
 
-        mostrarMenu();
+int main() {
 
-        printf("Ingrese su opcion: ");
+  srand(time(NULL));
 
-        scanf("%d", &opcion);
 
-        switch (opcion)
-        {
 
-        case 1:
 
-            CAMI(Datos, archivoResultados);
+  // Se genera una matriz de datos usando el número de años (5), el número de semestres (2) y el número de carreras que son (7)
 
-            break;
+  int Datos[5][2][7];
 
-        case 2:
+  int a, s, c; // a = años, s = semestre, c = carreras
 
-            CCMI(Datos, archivoResultados);
 
-            break;
 
-        case 3:
 
-            CAMIS(Datos, archivoResultados);
+  for (a = 0; a < 5; a++) {
 
-            break;
+    for (s = 0; s < 2; s++) {
 
-        case 4:
+      for (c = 0; c < 7; c++) {
 
-            salir = 1;
+        Datos[a][s][c] = rand() % 201; // Generar los datos aleatoriamente entre 0 y 200
 
-            break;
+      }
 
-        default:
-
-            printf("Opcion no valida. Por favor, ingrese una opcion valida.\n");
-        }
-
-        printf("\n");
     }
 
-    fclose(archivoResultados);
+  }
 
-    printf("Los resultados se han guardado en el archivo resultados.txt.\n");
 
-    return 0;
+
+
+  FILE *archivoDatos;
+
+  archivoDatos = fopen("datos.txt", "w");
+
+  if (archivoDatos == NULL) {
+
+    printf("No se pudo abrir el archivo datos.txt.\n");
+
+    return 1;
+
+  }
+
+
+
+
+  // Escribir los datos en el archivo datos.txt
+
+  for (a = 0; a < 5; a++) {
+
+    fprintf(archivoDatos, "Año %d:\n", 2023 - 5 + a);
+
+    for (s = 0; s < 2; s++) {
+
+      fprintf(archivoDatos, "Semestre %d:\n", s + 1);
+
+      for (c = 0; c < 7; c++) {
+
+        fprintf(archivoDatos, "Carrera %d - %s: %d alumnos\n", c + 1, materias[c], Datos[a][s][c]);
+
+      }
+
+    }
+
+  }
+
+
+
+
+  fclose(archivoDatos);
+
+
+
+
+  int opcion;
+
+  int salir = 0;
+
+
+
+
+  FILE *archivoResultados;
+
+  archivoResultados = fopen("resultados.txt", "w");
+
+  if (archivoResultados == NULL) {
+
+    printf("No se pudo abrir el archivo resultados.txt.\n");
+
+    return 1;
+
+  }
+
+
+
+
+  while (!salir) {
+
+    mostrarMenu();
+
+    printf("Ingrese su opcion: ");
+
+    scanf("%d", &opcion);
+
+
+
+
+    switch (opcion) {
+
+      case 1:
+
+        CAMI(Datos, archivoResultados);
+
+        break;
+
+      case 2:
+
+        CCMI(Datos, archivoResultados);
+
+        break;
+
+      case 3:
+
+        CAMIS(Datos, archivoResultados);
+
+        break;
+
+      case 4:
+
+        salir = 1;
+
+        break;
+
+      default:
+
+        printf("Opcion no valida. Por favor, ingrese una opcion valida.\n");
+
+    }
+
+
+
+
+    printf("\n");
+
+  }
+
+
+
+
+  fclose(archivoResultados);
+
+
+
+
+  printf("Los resultados se han guardado en el archivo resultados.txt.\n");
+
+
+
+
+  return 0;
+
 }
