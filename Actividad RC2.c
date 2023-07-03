@@ -85,10 +85,44 @@ int main()
             for (c = 0; c < 7; c++)
             {
 
-                Datos[a][s][c] = rand() % 201; // Generar los datos aleatoriamente entre 0 y 200
+                Datos[a][s][c] = rand() % 201; 
             }
         }
     }
+
+    FILE *archivoDatos;
+
+    archivoDatos = fopen("datos.txt", "w");
+
+    if (archivoDatos == NULL)
+    {
+
+        printf("No se pudo abrir el archivo datos.txt.\n");
+
+        return 1;
+    }
+
+    
+
+    for (a = 0; a < 5; a++)
+    {
+
+        fprintf(archivoDatos, "Año %d:\n", 2023 - 5 + a);
+
+        for (s = 0; s < 2; s++)
+        {
+
+            fprintf(archivoDatos, "Semestre %d:\n", s + 1);
+
+            for (c = 0; c < 7; c++)
+            {
+
+                fprintf(archivoDatos, "Carrera %d - %s: %d alumnos\n", c + 1, materias[c], Datos[a][s][c]);
+            }
+        }
+    }
+
+    fclose(archivoDatos);
 
     return 0;
 }
