@@ -1,85 +1,85 @@
 Año 2018:
 Semestre 1:
-Carrera 1 - Ingenieria de Software: 31 alumnos
-Carrera 2 - Administracion: 19 alumnos
-Carrera 3 - Economia: 124 alumnos
-Carrera 4 - Relaciones Internacionales: 37 alumnos
-Carrera 5 - Matematicas: 14 alumnos
-Carrera 6 - Contabilidad: 71 alumnos
-Carrera 7 - Ingenieria Industrial: 130 alumnos
+Carrera 1 - Ingenieria de Software: 49 alumnos
+Carrera 2 - Administracion: 148 alumnos
+Carrera 3 - Economia: 113 alumnos
+Carrera 4 - Relaciones Internacionales: 28 alumnos
+Carrera 5 - Matematicas: 140 alumnos
+Carrera 6 - Contabilidad: 124 alumnos
+Carrera 7 - Ingenieria Industrial: 64 alumnos
 Semestre 2:
-Carrera 1 - Ingenieria de Software: 28 alumnos
-Carrera 2 - Administracion: 32 alumnos
-Carrera 3 - Economia: 95 alumnos
-Carrera 4 - Relaciones Internacionales: 74 alumnos
-Carrera 5 - Matematicas: 165 alumnos
-Carrera 6 - Contabilidad: 48 alumnos
-Carrera 7 - Ingenieria Industrial: 44 alumnos
+Carrera 1 - Ingenieria de Software: 98 alumnos
+Carrera 2 - Administracion: 149 alumnos
+Carrera 3 - Economia: 148 alumnos
+Carrera 4 - Relaciones Internacionales: 117 alumnos
+Carrera 5 - Matematicas: 92 alumnos
+Carrera 6 - Contabilidad: 65 alumnos
+Carrera 7 - Ingenieria Industrial: 128 alumnos
 Año 2019:
 Semestre 1:
-Carrera 1 - Ingenieria de Software: 150 alumnos
-Carrera 2 - Administracion: 22 alumnos
-Carrera 3 - Economia: 74 alumnos
-Carrera 4 - Relaciones Internacionales: 68 alumnos
-Carrera 5 - Matematicas: 90 alumnos
-Carrera 6 - Contabilidad: 139 alumnos
-Carrera 7 - Ingenieria Industrial: 92 alumnos
+Carrera 1 - Ingenieria de Software: 41 alumnos
+Carrera 2 - Administracion: 169 alumnos
+Carrera 3 - Economia: 166 alumnos
+Carrera 4 - Relaciones Internacionales: 111 alumnos
+Carrera 5 - Matematicas: 147 alumnos
+Carrera 6 - Contabilidad: 113 alumnos
+Carrera 7 - Ingenieria Industrial: 119 alumnos
 Semestre 2:
-Carrera 1 - Ingenieria de Software: 62 alumnos
-Carrera 2 - Administracion: 2 alumnos
-Carrera 3 - Economia: 181 alumnos
-Carrera 4 - Relaciones Internacionales: 136 alumnos
-Carrera 5 - Matematicas: 14 alumnos
-Carrera 6 - Contabilidad: 152 alumnos
-Carrera 7 - Ingenieria Industrial: 74 alumnos
+Carrera 1 - Ingenieria de Software: 159 alumnos
+Carrera 2 - Administracion: 195 alumnos
+Carrera 3 - Economia: 119 alumnos
+Carrera 4 - Relaciones Internacionales: 74 alumnos
+Carrera 5 - Matematicas: 11 alumnos
+Carrera 6 - Contabilidad: 16 alumnos
+Carrera 7 - Ingenieria Industrial: 2 alumnos
 Año 2020:
 Semestre 1:
-Carrera 1 - Ingenieria de Software: 76 alumnos
-Carrera 2 - Administracion: 6 alumnos
-Carrera 3 - Economia: 124 alumnos
-Carrera 4 - Relaciones Internacionales: 168 alumnos
-Carrera 5 - Matematicas: 60 alumnos
-Carrera 6 - Contabilidad: 101 alumnos
-Carrera 7 - Ingenieria Industrial: 128 alumnos
+Carrera 1 - Ingenieria de Software: 9 alumnos
+Carrera 2 - Administracion: 112 alumnos
+Carrera 3 - Economia: 178 alumnos
+Carrera 4 - Relaciones Internacionales: 162 alumnos
+Carrera 5 - Matematicas: 185 alumnos
+Carrera 6 - Contabilidad: 73 alumnos
+Carrera 7 - Ingenieria Industrial: 171 alumnos
 Semestre 2:
-Carrera 1 - Ingenieria de Software: 64 alumnos
-Carrera 2 - Administracion: 121 alumnos
-Carrera 3 - Economia: 40 alumnos
-Carrera 4 - Relaciones Internacionales: 52 alumnos
-Carrera 5 - Matematicas: 31 alumnos
-Carrera 6 - Contabilidad: 134 alumnos
-Carrera 7 - Ingenieria Industrial: 10 alumnos
+Carrera 1 - Ingenieria de Software: 118 alumnos
+Carrera 2 - Administracion: 110 alumnos
+Carrera 3 - Economia: 145 alumnos
+Carrera 4 - Relaciones Internacionales: 7 alumnos
+Carrera 5 - Matematicas: 176 alumnos
+Carrera 6 - Contabilidad: 171 alumnos
+Carrera 7 - Ingenieria Industrial: 128 alumnos
 Año 2021:
 Semestre 1:
-Carrera 1 - Ingenieria de Software: 71 alumnos
-Carrera 2 - Administracion: 174 alumnos
-Carrera 3 - Economia: 56 alumnos
-Carrera 4 - Relaciones Internacionales: 64 alumnos
-Carrera 5 - Matematicas: 151 alumnos
-Carrera 6 - Contabilidad: 33 alumnos
-Carrera 7 - Ingenieria Industrial: 153 alumnos
+Carrera 1 - Ingenieria de Software: 16 alumnos
+Carrera 2 - Administracion: 158 alumnos
+Carrera 3 - Economia: 125 alumnos
+Carrera 4 - Relaciones Internacionales: 146 alumnos
+Carrera 5 - Matematicas: 115 alumnos
+Carrera 6 - Contabilidad: 16 alumnos
+Carrera 7 - Ingenieria Industrial: 146 alumnos
 Semestre 2:
-Carrera 1 - Ingenieria de Software: 198 alumnos
-Carrera 2 - Administracion: 157 alumnos
-Carrera 3 - Economia: 142 alumnos
-Carrera 4 - Relaciones Internacionales: 32 alumnos
-Carrera 5 - Matematicas: 71 alumnos
-Carrera 6 - Contabilidad: 188 alumnos
-Carrera 7 - Ingenieria Industrial: 79 alumnos
+Carrera 1 - Ingenieria de Software: 120 alumnos
+Carrera 2 - Administracion: 170 alumnos
+Carrera 3 - Economia: 68 alumnos
+Carrera 4 - Relaciones Internacionales: 5 alumnos
+Carrera 5 - Matematicas: 109 alumnos
+Carrera 6 - Contabilidad: 138 alumnos
+Carrera 7 - Ingenieria Industrial: 5 alumnos
 Año 2022:
 Semestre 1:
-Carrera 1 - Ingenieria de Software: 151 alumnos
-Carrera 2 - Administracion: 41 alumnos
-Carrera 3 - Economia: 122 alumnos
-Carrera 4 - Relaciones Internacionales: 98 alumnos
-Carrera 5 - Matematicas: 196 alumnos
-Carrera 6 - Contabilidad: 182 alumnos
-Carrera 7 - Ingenieria Industrial: 1 alumnos
+Carrera 1 - Ingenieria de Software: 52 alumnos
+Carrera 2 - Administracion: 17 alumnos
+Carrera 3 - Economia: 177 alumnos
+Carrera 4 - Relaciones Internacionales: 103 alumnos
+Carrera 5 - Matematicas: 146 alumnos
+Carrera 6 - Contabilidad: 153 alumnos
+Carrera 7 - Ingenieria Industrial: 189 alumnos
 Semestre 2:
-Carrera 1 - Ingenieria de Software: 116 alumnos
-Carrera 2 - Administracion: 35 alumnos
-Carrera 3 - Economia: 23 alumnos
-Carrera 4 - Relaciones Internacionales: 170 alumnos
-Carrera 5 - Matematicas: 69 alumnos
-Carrera 6 - Contabilidad: 37 alumnos
-Carrera 7 - Ingenieria Industrial: 149 alumnos
+Carrera 1 - Ingenieria de Software: 147 alumnos
+Carrera 2 - Administracion: 96 alumnos
+Carrera 3 - Economia: 71 alumnos
+Carrera 4 - Relaciones Internacionales: 88 alumnos
+Carrera 5 - Matematicas: 52 alumnos
+Carrera 6 - Contabilidad: 99 alumnos
+Carrera 7 - Ingenieria Industrial: 44 alumnos
