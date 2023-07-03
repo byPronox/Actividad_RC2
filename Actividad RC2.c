@@ -1,9 +1,12 @@
+// Seleccion de las 3 librerias necesatrias para el codigo
+
 #include <stdio.h>
 
 #include <stdlib.h>
 
 #include <time.h>
 
+// Creacion del arreglo con cadenas de caracteres con las 7 carreras
 char *materias[] = {
 
     "Ingenieria de Software",
@@ -20,7 +23,7 @@ char *materias[] = {
 
     "Ingenieria Industrial"};
 
-void CAMI(int Datos[][2][7], FILE *archivoResultados)
+void CAMI(int Datos[][2][7], FILE *archivoResultados) // Creacion del File .txt con arreglo tridimencional
 {
 
     int Ami = 0; // Año de máximo ingreso
@@ -54,6 +57,8 @@ void CAMI(int Datos[][2][7], FILE *archivoResultados)
     fprintf(archivoResultados, "El año con la mayor cantidad de alumnos ingresaron a la universidad fue: %d\n", Ami);
 }
 
+// Creacion de menu con 4 opciones
+
 void mostrarMenu()
 {
 
@@ -71,10 +76,12 @@ void mostrarMenu()
 int main()
 {
     srand(time(NULL));
-
+    // iniciamos las variables, arreglo tridimencional
     int Datos[5][2][7];
 
     int a, s, c;
+
+    // 3 For para ingresar datos random de 1 a 200
 
     for (a = 0; a < 5; a++)
     {
@@ -89,7 +96,7 @@ int main()
             }
         }
     }
-
+    // Se abre el archivo llamado datos .txt
     FILE *archivoDatos;
 
     archivoDatos = fopen("datos.txt", "w");
@@ -101,6 +108,8 @@ int main()
 
         return 1;
     }
+
+    // Se imprime los datos del semestre, año, alumnos dentro del .txt
 
     for (a = 0; a < 5; a++)
     {
@@ -119,12 +128,17 @@ int main()
             }
         }
     }
+    // Se cierra el .txt
 
     fclose(archivoDatos);
+
+    // Se crea las variables para las opciones que introdusca el usuario
 
     int opcion;
 
     int salir = 0;
+
+    // Se abre otro .txt con los resultados
 
     FILE *archivoResultados;
 
@@ -137,6 +151,8 @@ int main()
 
         return 1;
     }
+
+    // Un swich para que detecte la opcion ingrasada por el usuario
 
     while (!salir)
     {
