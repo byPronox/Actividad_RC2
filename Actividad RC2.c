@@ -76,5 +76,19 @@ int main()
 
     int a, s, c;
 
+    for (a = 0; a < 5; a++)
+    {
+
+        for (s = 0; s < 2; s++)
+        {
+
+            for (c = 0; c < 7; c++)
+            {
+
+                Datos[a][s][c] = rand() % 201; // Generar los datos aleatoriamente entre 0 y 200
+            }
+        }
+    }
+
     return 0;
 }
