@@ -85,7 +85,7 @@ int main()
             for (c = 0; c < 7; c++)
             {
 
-                Datos[a][s][c] = rand() % 201; 
+                Datos[a][s][c] = rand() % 201;
             }
         }
     }
@@ -101,8 +101,6 @@ int main()
 
         return 1;
     }
-
-    
 
     for (a = 0; a < 5; a++)
     {
@@ -123,6 +121,70 @@ int main()
     }
 
     fclose(archivoDatos);
+
+    int opcion;
+
+    int salir = 0;
+
+    FILE *archivoResultados;
+
+    archivoResultados = fopen("resultados.txt", "w");
+
+    if (archivoResultados == NULL)
+    {
+
+        printf("No se pudo abrir el archivo resultados.txt.\n");
+
+        return 1;
+    }
+
+    while (!salir)
+    {
+
+        mostrarMenu();
+
+        printf("Ingrese su opcion: ");
+
+        scanf("%d", &opcion);
+
+        switch (opcion)
+        {
+
+        case 1:
+
+            CAMI(Datos, archivoResultados);
+
+            break;
+
+        case 2:
+
+            CCMI(Datos, archivoResultados);
+
+            break;
+
+        case 3:
+
+            CAMIS(Datos, archivoResultados);
+
+            break;
+
+        case 4:
+
+            salir = 1;
+
+            break;
+
+        default:
+
+            printf("Opcion no valida. Por favor, ingrese una opcion valida.\n");
+        }
+
+        printf("\n");
+    }
+
+    fclose(archivoResultados);
+
+    printf("Los resultados se han guardado en el archivo resultados.txt.\n");
 
     return 0;
 }
