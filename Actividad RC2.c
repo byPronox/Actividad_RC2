@@ -72,6 +72,20 @@ void CAMI (int Datos[][2][7], FILE *archivoResultados) {
 
 }
 
+void mostrarMenu() {
+
+  printf("Menu:\n");
+
+  printf("1. Calcular el año con la mayor cantidad de alumnos ingresados a la universidad.\n");
+
+  printf("2. Calcular la carrera que recibió la mayor cantidad de alumnos en el último año.\n");
+
+  printf("3. Calcular el año en que la carrera de Ingeniería de Software recibió la mayor cantidad de alumnos.\n");
+
+  printf("4. Salir.\n");
+
+}
+
 
 
 
